@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://eduport.webestica.com/sign-in.html -->
+<html data-theme="light" lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Eduport - LMS, Education and Course Theme</title>
+
+    <!-- Meta Tags -->
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Webestica.com" name="author">
+    <meta content="Eduport- LMS, Education and Course Theme" name="description">
+
+    <!-- Favicon -->
+<!--    <link href="https://eduport.webestica.com/assets/images/favicon.ico" rel="shortcut icon">-->
+
+    <!-- Google Font -->
+<!--    <link href="https://fonts.googleapis.com/" rel="preconnect">-->
+<!--    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect">-->
+<!--    <link href="./login_files/css2" rel="stylesheet">-->
+
+    <!-- Plugins CSS -->
+    <link href="https://res.doubleq666.cn/fund/login_files/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://res.doubleq666.cn/fund/login_files/bootstrap-icons.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="https://res.doubleq666.cn/fund/login_files/style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://res.doubleq666.cn/fund/js/jquery.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+<!--    <script src="js/bootstrap.min.js"></script>-->
+    <script>
+        // const url = "http://" + document.domain + url + "login";
+        $(function() {
+            $("#loginButton").click(function() {
+                $.ajax({
+                    url: "./login",
+                    type: "post",
+                    data: {
+                        email: $("#emailBox").val(),
+                        password: $("#passwordBox").val()
+                    },
+                    success: function(data) {
+                        if (data === "0") {
+                        } else if (data === "1") {
+                            window.location.href = "./";
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+    <script src="https://res.doubleq666.cn/fund/fund_files/app1.js"></script>
+
+</head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+    <section class="p-0 d-flex align-items-center position-relative overflow-hidden">
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left -->
+                <!--                <div class="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100">-->
+                <div class="col-12 col-lg-6 d-md-flex align-items-center justify-content-center bg-primary bg-opacity-10 vh-lg-100" style="margin: 0; padding: 0">
+                    <img alt="" class="mt-5" src="https://res.doubleq666.cn/fund/image/3081.svg"
+                         style="object-fit: cover">
+                    <!--                    <div class="p-3 p-lg-5">-->
+                    <!--                        &lt;!&ndash; Title &ndash;&gt;-->
+                    <!--                        <div class="text-center">-->
+                    <!--                            <h2 class="fw-bold">Welcome to our largest community</h2>-->
+                    <!--                            <p class="mb-0 h6 fw-light">Let's learn something new today!</p>-->
+                    <!--                        </div>-->
+                    <!--                        &lt;!&ndash; SVG Image &ndash;&gt;-->
+                    <!--                        -->
+                    <!--                        &lt;!&ndash; Info &ndash;&gt;-->
+                    <!--                        <div class="d-sm-flex mt-5 align-items-center justify-content-center">-->
+                    <!--                            &lt;!&ndash; Avatar group &ndash;&gt;-->
+                    <!--                            <ul class="avatar-group mb-2 mb-sm-0">-->
+                    <!--                                <li class="avatar avatar-sm">-->
+                    <!--                                    <img alt="avatar" class="avatar-img rounded-circle" src="./login_files/01.jpg">-->
+                    <!--                                </li>-->
+                    <!--                                <li class="avatar avatar-sm">-->
+                    <!--                                    <img alt="avatar" class="avatar-img rounded-circle" src="./login_files/02.jpg">-->
+                    <!--                                </li>-->
+                    <!--                                <li class="avatar avatar-sm">-->
+                    <!--                                    <img alt="avatar" class="avatar-img rounded-circle" src="./login_files/03.jpg">-->
+                    <!--                                </li>-->
+                    <!--                                <li class="avatar avatar-sm">-->
+                    <!--                                    <img alt="avatar" class="avatar-img rounded-circle" src="./login_files/04.jpg">-->
+                    <!--                                </li>-->
+                    <!--                            </ul>-->
+                    <!--                            &lt;!&ndash; Content &ndash;&gt;-->
+                    <!--                            <p class="mb-0 h6 fw-light ms-0 ms-sm-3">4k+ Students joined us, now it's your turn.</p>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                </div>
+
+                <!-- Right -->
+                <div class="col-12 col-lg-6 m-auto">
+                    <div class="row my-5">
+                        <div class="col-sm-10 col-xl-8 m-auto">
+                            <!-- Title -->
+                            <h1 class="fs-2">登录</h1>
+                            <p class="lead mb-4">请登录以访问基金管理系统</p>
+
+                            <!-- Form START -->
+                            <form>
+                                <!-- Email -->
+                                <div class="mb-4">
+                                    <label class="form-label">邮箱地址 *</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                            </svg>
+                                        </span>
+                                        <input class="form-control border-0 bg-light rounded-end ps-1" id="emailBox"
+                                               placeholder="E-mail" type="email">
+                                    </div>
+                                </div>
+                                <!-- Password -->
+                                <div class="mb-4">
+                                    <label class="form-label">密码 *</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text bg-light rounded-start border-0 text-secondary px-3">
+                                            <svg t="1669637353083" class="bi" viewBox="0 0 1024 1024" version="1.1"
+                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                 height="16">
+                                                <path d="M385.150849 385.662338l-128.895105 0 0-150.377622q0-49.102897 19.436563-91.556444t53.706294-74.677323 80.815185-50.637363 101.786214-18.413586q49.102897 0 94.625375 18.413586t80.815185 50.637363 56.263736 74.677323 20.971029 91.556444l0 150.377622-123.78022 0 0-121.734266q0-64.447552-35.804196-99.74026t-97.182817-35.292707q-55.240759 0-88.999001 35.292707t-33.758242 99.74026l0 121.734266zM826.053946 447.040959q27.62038 0 47.568432 19.948052t19.948052 47.568432l0 317.122877q0 27.62038-9.718282 51.66034t-26.597403 41.942058-39.896104 28.131868-50.637363 10.22977l-516.603397 0q-27.62038 0-50.125874-10.22977t-38.361638-27.108891-24.551449-39.384615-8.695305-48.07992l0-324.283716q0-27.62038 19.436563-47.568432t47.056943-19.948052l61.378621 0 128.895105 0 255.744256 0 123.78022 0 61.378621 0z">
+
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <input class="form-control border-0 bg-light rounded-end ps-1" id="passwordBox"
+                                               placeholder="password" type="password">
+                                    </div>
+                                </div>
+                                <!-- Check box -->
+                                <div class="mb-4 d-flex justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                                        <label class="form-check-label" for="exampleCheck1">保持登录状态</label>
+                                    </div>
+                                    <div class="text-primary-hover">
+                                        <a class="text-secondary"
+                                           href="https://eduport.webestica.com/forgot-password.html">
+                                            <u>忘记密码？</u>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="align-items-center mt-0">
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary mb-0" type="button" id="loginButton">登录</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- Form END -->
+
+                            <!-- Sign up link -->
+                            <div class="mt-4 text-center">
+                                <span>还没有账户？<a href="./signup.html">点击注册</a></span>
+                            </div>
+                        </div>
+                    </div> <!-- Row END -->
+                </div>
+            </div> <!-- Row END -->
+        </div>
+    </section>
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+
+<!-- Bootstrap JS -->
+<script src="https://res.doubleq666.cn/fund/login_files/bootstrap.bundle.min.js"></script>
+
+<!-- Template Functions -->
+<script src="https://res.doubleq666.cn/fund/login_files/functions.js"></script>
+
+
+</body>
+</html>

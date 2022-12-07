@@ -1,0 +1,97 @@
+body {
+    background: #f9fafd;
+}
+
+#nav-left {
+    position: fixed;
+    background: #313a46;
+    width: 300px;
+    float: left;
+}
+
+#dashboard {
+    background: darkred;
+    height: auto;
+    width: 200px;
+    float: right;
+}
+
+.box {
+    padding: 10px;
+    min-height: 100px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+#half-box-left {
+    padding: 10px;
+    min-height: 100px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    /*margin-top: 30px;*/
+    margin-left: 25px;
+    /*margin-bottom: 30px;*/
+    float: left;
+}
+
+#half-box-right {
+    padding: 10px;
+    min-height: 100px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    /*margin-top: 30px;*/
+    margin-right: 25px;
+    /*margin-bottom: 30px;*/
+    float: right;
+}
+
+.no-enter {
+    display: inline;
+}
+
+#logo {
+    width: 150px;
+    /*margin: 50px auto 10px auto;*/
+    margin-top: 50px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /*align-content: center;*/
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: #313a46;
+}
+
+a:hover {
+    color: darkred;
+}
+
+#record {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+}
+
+#record>a:hover {
+    color: #f9fafd;
+}
+
+.table-col1 {
+    --bs-table-bg: #313a46;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #313a46;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #313a46;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #313a46;
+    color: #313a46;
+    border-color: #373b3e;
+}
